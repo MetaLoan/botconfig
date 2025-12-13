@@ -1,0 +1,16 @@
+{
+  "name": "telegram-miniapp-wrapper-bot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node bot.mjs",
+    "start:awake": "caffeinate -i node bot.mjs",
+    "miniapp:dev": "node serve-miniapp.mjs",
+    "convert:icons": "node convert-icons.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.0"
+  }
+}
+
+

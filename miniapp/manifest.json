@@ -1,0 +1,23 @@
+{
+  "name": "Academy of Crypto",
+  "short_name": "Crypto Academy",
+  "description": "Learn how to optimize and minimize your losses in trading",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#0f3460",
+  "icons": [
+    {
+      "src": "./icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
+

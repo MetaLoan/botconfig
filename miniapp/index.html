@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy of Crypto - MiniApp</title>
+    <meta name="description" content="Learn how to optimize and minimize your losses in trading" />
+    
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Academy of Crypto" />
+    <meta property="og:description" content="Learn how to optimize and minimize your losses in trading" />
+    <meta property="og:image" content="./og-image.png" />
+    
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="header">
+        <div class="badge">Telegram MiniApp</div>
+        <h1 class="title">AvaTrade Academy 课程</h1>
+        <p class="sub">
+          这是一个“套壳”入口：在 Telegram 内打开课程列表页面。若目标站点禁止 iframe（常见于 CSP /
+          X-Frame-Options），请使用下方按钮跳转。
+        </p>
+      </header>
+
+      <section class="card">
+        <div class="row">
+          <div class="label">目标地址</div>
+          <a class="link" id="targetLink" href="#" rel="noreferrer">加载中…</a>
+        </div>
+
+        <button class="primary" id="openBtn" type="button">打开课程列表</button>
+        <button class="secondary" id="closeBtn" type="button">关闭</button>
+
+        <p class="hint" id="hint"></p>
+      </section>
+
+      <section class="preview card">
+        <div class="row">
+          <div class="label">预览（可能被拦截）</div>
+          <div class="small">如果下方空白/报错，说明站点不允许被嵌入。</div>
+        </div>
+        <iframe
+          id="frame"
+          title="AvaTrade Academy"
+          referrerpolicy="no-referrer"
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+
+

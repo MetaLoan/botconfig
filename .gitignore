@@ -1,0 +1,9 @@
+config.json
+config.*.json
+!config.example.json
+node_modules
+.DS_Store
+*.log
+
+
+
