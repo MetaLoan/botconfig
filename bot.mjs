@@ -11,6 +11,9 @@ import { chapters, courseStructure, getChapterList } from "./course-content.mjs"
  * 2) process.env.BOT_TOKEN / process.env.WEBAPP_URL
  */
 
+// 强制禁用 TLS 证书验证（解决网络环境证书问题）
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 function readConfig() {
   const fromEnv = {
     BOT_TOKEN: process.env.BOT_TOKEN,

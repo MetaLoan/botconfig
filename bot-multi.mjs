@@ -6,6 +6,9 @@ import { chapters, courseStructure, getChapterList } from "./course-content.mjs"
  * 支持同时运行多个 Bot 实例
  */
 
+// 强制禁用 TLS 证书验证（解决网络环境证书问题）
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 // 读取所有配置文件
 function loadAllConfigs() {
   const configs = [];
