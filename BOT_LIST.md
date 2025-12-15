@@ -71,7 +71,17 @@
 
 ## 管理命令
 
-### 查看所有 Bot 状态
+### 查看所有 Bot 状态（推荐）
+```bash
+./status-multi-bot.sh
+```
+显示：
+- Bot运行状态
+- 进程信息（PID、CPU、内存）
+- 配置的Bot数量
+- 最新日志（最后15行）
+
+### 查看实时日志
 ```bash
 tail -f bot-multi.log
 ```

@@ -32,3 +32,4 @@ for (const { name, file } of configs) {
 
 console.log("🎯 两个 Bot 都已在运行，共享相同的学习系统！");
 
+

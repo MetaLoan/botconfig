@@ -72,12 +72,22 @@ npm run miniapp:dev
 
 ### 🔧 管理命令
 
+**单Bot模式：**
 ```bash
 ./start-bot.sh -d    # 启动（后台）
 ./stop-bot.sh        # 停止
 ./restart-bot.sh     # 重启
 ./status-bot.sh      # 查看状态
 tail -f bot.log      # 查看日志
+```
+
+**多Bot模式：**
+```bash
+./start-multi-bot.sh -d    # 启动所有Bot（后台）
+./stop-multi-bot.sh        # 停止所有Bot
+./restart-multi-bot.sh     # 重启所有Bot
+./status-multi-bot.sh      # 查看状态 ⭐
+tail -f bot-multi.log      # 查看日志
 ```
 
 详细说明请查看 [BOT_MANAGEMENT.md](./BOT_MANAGEMENT.md)
